@@ -61,3 +61,45 @@ This locks in some initial boundaries for the design of our application, to prev
 * Interfaces
 * Random ordering
 * Texting
+
+## Data Design
+
+In this course we're sarting out with designing our data structures, and only then moving onto designing the front end.
+
+First list down everything, and only them note down the type for each object. It's also useful do break thing down now and put them together later if needed (e.g. names). It's much harder to break things appart if necessary later.
+
+It's ok to miss stuff. Just do your best to think it through.
+
+### Mapping the Data
+
+#### Team
+* TeamMembers `List<Person>`
+* TeamName `string`
+
+#### Person
+* FirstName `string`
+* LastName `string`
+* EmailAddress `string`
+* CellphoneNumber `string`
+
+#### Tournament
+* TournamentName `string`
+* EntryFee `decimal` (`decimal` becasue it's money and we need the precision, otherwise `double` might be an option)
+* EnteredTeams `List<Team>`
+* Prizes `List<Prize>`
+* Rounds `List<List<Matchup>>` (one list of matchups per round, one list to contain the lists of rounds)
+
+#### Prize
+* PlaceNumber `int`
+* PlaceName `string`
+* PrizeAmount `decimal`
+* PrizePercentage `double` (here we don't need the extra precision)
+
+#### Matchup
+* Entries `List<MatchupEntry>`
+* Winner `Team`
+
+#### MatchupEntry
+* TeamCompeting `Team`
+* Score `double`
+* ParentMatchup `Matchup`
