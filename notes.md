@@ -118,7 +118,7 @@ UI designs taken from the video. These should be scketched out in paper or a whi
 
 ### Create Team
 
-We're creating team members in the team creator to streamline the process and prevent the user from ahaving to go down multiple levels.
+We're creating team members in the team creator to streamline the process and prevent the user from having to go down multiple levels.
 
 ![Create Team UI.](create_team.png)
 
@@ -127,3 +127,8 @@ We're creating team members in the team creator to streamline the process and pr
 
 ### Tournament Dashboard
 ![Tournament Dashboard UI.](tournament_dashboard.png)
+
+## Logic Planning
+
+Do this on paper or scratch pad and draw out each form and element(button and what write out the logic they perform. The course just dicussed it orally over the form screenshots. Some things are hard to plan out in abstract and are best dealt with in the code itself (e.g. how to set up the different databases).
+
