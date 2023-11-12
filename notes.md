@@ -132,3 +132,9 @@ We're creating team members in the team creator to streamline the process and pr
 
 Do this on paper or scratch pad and draw out each form and element(button and what write out the logic they perform. The course just dicussed it orally over the form screenshots. Some things are hard to plan out in abstract and are best dealt with in the code itself (e.g. how to set up the different databases).
 
+## Form building
+
+* Use the propertioes menu to change the propterties opf the form.
+* It's important to change the font right away, since buttons and other UI elements inherit the default font of the form, but if we change the default later the childre won't change to the new default.
+* Be smart about the names we give to object so we can find them view Intelisense search later.
+* 
